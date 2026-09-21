@@ -16,6 +16,27 @@ Claude จะตอบจาก**ข้อมูลจริงที่ดึ�
 **ไม่ต้องกรอก token หรือ API key ใดๆ** — ใช้ OAuth 2.1 + PKCE เชื่อมต่อ ไม่มีความลับเก็บอยู่ในไฟล์ config
 และไม่มีอะไรให้เผลอ commit ขึ้น git
 
+## ใช้บน Claude Desktop หรือ claude.ai (แชทธรรมดา)
+
+`/plugin` ใช้ได้เฉพาะ Claude Code — ถ้าใช้แชทปกติให้เพิ่มเป็น **custom connector** แทน
+ได้เครื่องมือชุดเดียวกันทุกอย่าง
+
+1. เปิด **Customize → Connectors** → **Add custom connector**
+2. วาง URL นี้:
+   ```
+   https://aiomax.panphol.com/mcp
+   ```
+3. ช่อง OAuth Client ID / Client Secret ใน **Advanced settings** ให้ **เว้นว่างไว้** —
+   ระบบจะค้นหาการตั้งค่า OAuth ของเซิร์ฟเวอร์เอง
+4. กด **Add** แล้วล็อกอินสมาชิก AiOMax เมื่อหน้าต่างเด้งขึ้นมา
+5. ในแชท กดปุ่ม **+** มุมล่างซ้าย → **Connectors** → เปิด AiOMax
+
+ต้องใช้แพ็กเกจ Pro หรือ Max ขึ้นไป (Team/Enterprise ต้องให้ Owner เพิ่มที่
+**Organization settings → Connectors**)
+
+> การเชื่อมต่อวิ่งออกจากคลาวด์ของ Anthropic ไม่ใช่จากเครื่องคุณ — เซิร์ฟเวอร์จึงต้องเข้าถึงได้จากอินเทอร์เน็ตสาธารณะ
+> (aiomax.panphol.com เข้าเงื่อนไขนี้อยู่แล้ว)
+
 ## ต้องเป็นสมาชิก
 
 ต้องเป็นสมาชิก AiOMax ที่มีแพ็กเกจใช้งานอยู่ — บัญชี guest เชื่อมต่อไม่ได้

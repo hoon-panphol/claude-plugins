@@ -1,7 +1,7 @@
 {
   "name": "portfolio-skills",
   "displayName": "Portfolio Skills",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "ชุด Skill สำหรับงานพอร์ตการลงทุน: จัดสัดส่วนสินทรัพย์แบบอิงงานวิจัยที่ตรวจสอบแหล่งได้, แผนปฏิบัติการ ตัด/ถือ/ถัว รายตัว และ stress test พอร์ตตามกรอบ Capital Agenda",
   "author": {
     "name": "hoon-panphol",
@@ -17,6 +17,8 @@
     "investing",
     "finance",
     "thai-stocks",
-    "set"
+    "set",
+    "ai-review",
+    "artifact"
   ]
 }

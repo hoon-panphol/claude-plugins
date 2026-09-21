@@ -11,7 +11,7 @@
       "source": "./",
       "displayName": "Portfolio Skills",
       "description": "ชุด Skill สำหรับงานพอร์ตการลงทุน: asset allocation อิงงานวิจัย, แผน ตัด/ถือ/ถัว และ stress test พอร์ต",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "category": "productivity",
       "license": "MIT",
       "keywords": [
@@ -19,7 +19,9 @@
         "asset-allocation",
         "stress-test",
         "investing",
-        "finance"
+        "finance",
+        "ai-review",
+        "artifact"
       ]
     }
   ]

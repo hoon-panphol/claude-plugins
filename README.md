@@ -18,6 +18,7 @@ Marketplace ปลั๊กอิน Claude — เครื่องมือ�
 | ปลั๊กอิน | ทำอะไร | ติดตั้ง |
 |---|---|---|
 | [portfolio-skills](plugins/portfolio-skills) | 4 Skill สำหรับงานพอร์ตการลงทุน — จัดสัดส่วนสินทรัพย์อิงงานวิจัยที่ตรวจแหล่งได้, แผน ตัด/ถือ/ถัว รายตัว, stress test พอร์ตตามกรอบ Capital Agenda และหน้า Artifact ที่ให้ AI สองตัวถกกัน | `/plugin install portfolio-skills@hoon-panphol` |
+| [aiomax](plugins/aiomax) | เชื่อม Claude เข้ากับคลังข้อมูล AiOMax ผ่าน MCP — ข่าว งบ ปันผล ผู้ถือหุ้น สกรีนหุ้นเชิงตัวเลข/เทคนิค กองทุน ทอง คริปโต และข้อมูลมหภาค ตอบจากข้อมูลจริง ไม่ใช่ความจำของโมเดล (ต้องเป็นสมาชิก AiOMax) | `/plugin install aiomax@hoon-panphol` |
 
 ## โครงสร้าง repo
 
@@ -26,9 +27,13 @@ claude-plugins/
 ├── .claude-plugin/
 │   └── marketplace.json        ← รายชื่อปลั๊กอินทั้งหมด
 └── plugins/
-    └── portfolio-skills/
+    ├── portfolio-skills/
+    │   ├── .claude-plugin/plugin.json
+    │   ├── skills/
+    │   └── README.md
+    └── aiomax/
         ├── .claude-plugin/plugin.json
-        ├── skills/
+        ├── .mcp.json
         └── README.md
 ```
 

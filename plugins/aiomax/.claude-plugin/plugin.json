@@ -1,0 +1,14 @@
+{
+  "name": "aiomax",
+  "displayName": "AiOMax",
+  "version": "1.0.0",
+  "description": "เชื่อม Claude เข้ากับ AiOMax — ข้อมูลหุ้นไทยและต่างประเทศที่จัดเก็บไว้แล้ว: ข่าว งบการเงิน ปันผล ผู้ถือหุ้น รายการซื้อขายของผู้บริหาร สกรีนหุ้นเชิงตัวเลขและเชิงเทคนิค กองทุนไทย ทองคำ คริปโต สินค้าโภคภัณฑ์ ข้อมูลมหภาค และการ์ดจำลองวิกฤตพอร์ต",
+  "author": {
+    "name": "hoon-panphol",
+    "url": "https://github.com/hoon-panphol"
+  },
+  "homepage": "https://aiomax.panphol.com",
+  "repository": "https://github.com/hoon-panphol/claude-plugins",
+  "license": "MIT",
+  "keywords": ["mcp", "thai-stocks", "set", "dividend", "screener", "market-data", "finance"]
+}

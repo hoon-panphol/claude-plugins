@@ -14,7 +14,33 @@
       "version": "1.1.0",
       "category": "productivity",
       "license": "MIT",
-      "keywords": ["portfolio", "asset-allocation", "stress-test", "investing", "finance", "ai-review", "artifact"]
+      "keywords": [
+        "portfolio",
+        "asset-allocation",
+        "stress-test",
+        "investing",
+        "finance",
+        "ai-review",
+        "artifact"
+      ]
+    },
+    {
+      "name": "aiomax",
+      "source": "./plugins/aiomax",
+      "displayName": "AiOMax",
+      "description": "เชื่อม Claude เข้ากับคลังข้อมูลหุ้นไทยและต่างประเทศของ AiOMax ผ่าน MCP — ข่าว งบ ปันผล สกรีนหุ้น กองทุน ทอง คริปโต และข้อมูลมหภาค (ต้องเป็นสมาชิก, ล็อกอินด้วย OAuth)",
+      "version": "1.0.0",
+      "category": "data",
+      "license": "MIT",
+      "keywords": [
+        "mcp",
+        "thai-stocks",
+        "set",
+        "dividend",
+        "screener",
+        "market-data",
+        "finance"
+      ]
     }
   ]
 }

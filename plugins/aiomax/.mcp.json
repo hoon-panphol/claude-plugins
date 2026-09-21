@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "aiomax": {
+      "type": "http",
+      "url": "https://aiomax.panphol.com/mcp"
+    }
+  }
+}

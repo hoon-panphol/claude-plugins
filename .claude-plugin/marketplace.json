@@ -1,6 +1,6 @@
 {
   "name": "hoon-panphol",
-  "description": "Claude Skill สำหรับงานพอร์ตการลงทุนโดย hoon-panphol — asset allocation อิงงานวิจัย, แผน ตัด/ถือ/ถัว และ stress test พอร์ต",
+  "description": "ปลั๊กอิน Claude โดย hoon-panphol — เครื่องมือวิเคราะห์การลงทุนและข้อมูลตลาดหุ้นไทย",
   "owner": {
     "name": "hoon-panphol",
     "url": "https://github.com/hoon-panphol"
@@ -8,21 +8,13 @@
   "plugins": [
     {
       "name": "portfolio-skills",
-      "source": "./",
+      "source": "./plugins/portfolio-skills",
       "displayName": "Portfolio Skills",
-      "description": "ชุด Skill สำหรับงานพอร์ตการลงทุน: asset allocation อิงงานวิจัย, แผน ตัด/ถือ/ถัว และ stress test พอร์ต",
+      "description": "ชุด Skill สำหรับงานพอร์ตการลงทุน: asset allocation อิงงานวิจัย, แผน ตัด/ถือ/ถัว, stress test พอร์ต และหน้า Artifact ที่ให้ AI สองตัวถกกัน",
       "version": "1.1.0",
       "category": "productivity",
       "license": "MIT",
-      "keywords": [
-        "portfolio",
-        "asset-allocation",
-        "stress-test",
-        "investing",
-        "finance",
-        "ai-review",
-        "artifact"
-      ]
+      "keywords": ["portfolio", "asset-allocation", "stress-test", "investing", "finance", "ai-review", "artifact"]
     }
   ]
 }

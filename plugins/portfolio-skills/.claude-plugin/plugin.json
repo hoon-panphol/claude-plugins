@@ -7,8 +7,8 @@
     "name": "hoon-panphol",
     "url": "https://github.com/hoon-panphol"
   },
-  "homepage": "https://github.com/hoon-panphol/portfolio-skills",
-  "repository": "https://github.com/hoon-panphol/portfolio-skills",
+  "homepage": "https://github.com/hoon-panphol/claude-plugins/tree/main/plugins/portfolio-skills",
+  "repository": "https://github.com/hoon-panphol/claude-plugins",
   "license": "MIT",
   "keywords": [
     "portfolio",

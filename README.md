@@ -1,0 +1,47 @@
+# Portfolio Skills
+
+ชุด Claude Skill สำหรับงานพอร์ตการลงทุน — ติดตั้งเป็น Claude Code plugin ได้ในคำสั่งเดียว
+
+## ติดตั้ง
+
+```
+/plugin marketplace add hoon-panphol/portfolio-skills
+/plugin install portfolio-skills@hoon-panphol
+```
+
+จากนั้นพิมพ์ `/reload-plugins` (หรือเปิด session ใหม่) แล้วใช้งานได้เลย — Skill จะถูก
+เรียกอัตโนมัติเมื่อคุณถามเรื่องที่ตรงกับ description ของมัน ไม่ต้องพิมพ์ชื่อ skill เอง
+
+ถ้าใช้บน claude.ai แทน: ดาวน์โหลดโฟลเดอร์ใน `skills/` แล้วอัปโหลดเป็น Skill ตามปกติ
+
+## Skill ที่อยู่ในชุดนี้
+
+| Skill | ใช้ตอนไหน | ได้อะไรกลับมา |
+|---|---|---|
+| `asset-allocation-research` | ถามเรื่องจัดสัดส่วนพอร์ต, diversification, correlation ระหว่างสินทรัพย์, ควร rebalance เมื่อไหร่ หรือต้องการ citation ประกอบบทความการลงทุน | คำตอบที่อ้างอิงเฉพาะแหล่งที่ตรวจสอบแล้ว (peer-reviewed ผ่าน DOI/Crossref + งานวิจัยสถาบันอย่าง Vanguard/Yale) พร้อม dashboard สัดส่วนพอร์ต |
+| `portfolio-action-plan` | แปะรายการหุ้นที่ถืออยู่ (พิมพ์เอง, ไฟล์ หรือภาพหน้าจอแอปโบรก) แล้วถามว่าควรทำอะไรต่อ — "จัดพอร์ต", "ปรับพอร์ต", ตัด/ถือ/ถัว | แผนปฏิบัติการเรียงตามลำดับความสำคัญ ระบุตัวที่ควรตัด/ถือ/ถัว พร้อมจังหวะและจำนวนคร่าวๆ เทียบกับ benchmark (SET / S&P 500 / MSCI World) |
+| `portfolio-stress-test` | อยากรู้ว่าพอร์ตทนแรงกระแทกได้แค่ไหน — "พอร์ตเสี่ยงไปไหม", "ถ้าเศรษฐกิจถดถอยจะเป็นยังไง", เช็ก allocation drift เทียบ rebalance band | dashboard ประเมินความทนทานรายตัว + สถานการณ์ช็อก (recession, rate shock, geopolitical, digital disruption) ตามกรอบ Capital Agenda |
+
+## สิ่งที่ต้องมี
+
+- Claude Code เวอร์ชันที่รองรับ plugin
+- เปิด web search / web fetch ไว้ — ทั้ง 3 skill ดึงข้อมูลสดจากแหล่งที่เชื่อถือได้ ไม่ตอบจากความจำ
+- ไม่ต้องติดตั้ง Python หรือ dependency ใดๆ เพิ่ม
+
+## ขอบเขตการใช้งาน
+
+Skill ชุดนี้ให้กรอบการวิเคราะห์และข้อมูลอ้างอิงเพื่อการศึกษา **ไม่ใช่คำแนะนำการลงทุนเฉพาะบุคคล**
+ไม่ครอบคลุมเรื่องภาษี และไม่รับประกันความถูกต้องของราคาหรือข้อมูลแบบเรียลไทม์
+ตัดสินใจลงทุนจริงควรตรวจสอบข้อมูลอีกครั้งและปรึกษาผู้แนะนำการลงทุนที่ได้รับใบอนุญาต
+
+## พัฒนาต่อ
+
+```
+git clone https://github.com/hoon-panphol/portfolio-skills
+claude plugin validate ./portfolio-skills
+/plugin marketplace add ./portfolio-skills    # ทดสอบจากเครื่องก่อน push
+```
+
+## License
+
+MIT — ดู [LICENSE](LICENSE)

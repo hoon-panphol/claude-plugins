@@ -1,0 +1,60 @@
+{
+  "tier_1_academic": {
+    "description": "Peer-reviewed journals, preprint servers ที่มีระบบ DOI ตรวจสอบได้ผ่าน Crossref",
+    "domains": [
+      "jstor.org",
+      "onlinelibrary.wiley.com",
+      "sciencedirect.com",
+      "nber.org",
+      "arxiv.org",
+      "ssrn.com",
+      "journals.plos.org",
+      "afajof.org",
+      "academic.oup.com",
+      "link.springer.com",
+      "doi.org",
+      "aeaweb.org"
+    ],
+    "note": "arxiv.org และ ssrn.com เป็น preprint server — ต้องระบุว่า 'preprint, ยังไม่ผ่าน peer review' เมื่ออ้างอิง"
+  },
+  "tier_2_institutional_research": {
+    "description": "งานวิจัยจากสถาบันการเงิน/asset manager ขนาดใหญ่ที่มีทีมวิจัยและเปิดเผยระเบียบวิธี",
+    "domains": [
+      "vanguard.com",
+      "corporate.vanguard.com",
+      "institutional.vanguard.com",
+      "blackrock.com",
+      "ssga.com",
+      "research.ftserussell.com",
+      "msci.com",
+      "morningstar.com",
+      "dimensional.com"
+    ]
+  },
+  "tier_3_regulatory_official": {
+    "description": "หน่วยงานกำกับดูแล/ธนาคารกลาง/องค์กรระหว่างประเทศ",
+    "domains": [
+      "sec.gov",
+      "federalreserve.gov",
+      "bis.org",
+      "imf.org",
+      "oecd.org",
+      "sec.or.th",
+      "bot.or.th",
+      "worldbank.org",
+      "fred.stlouisfed.org",
+      "stlouisfed.org",
+      "fredaccount.stlouisfed.org",
+      "ecb.europa.eu"
+    ]
+  },
+  "blocked_examples": {
+    "description": "ตัวอย่างประเภทแหล่งที่ห้ามใช้เป็นหลักฐานอ้างอิงเชิงวิชาการ (ใช้ได้แค่ประกอบความเข้าใจ)",
+    "categories": [
+      "personal blogs",
+      "forum posts (Reddit, Bogleheads เว้นแต่ลิงก์ไปยังต้นฉบับ tier 1-3)",
+      "affiliate/สื่อรองที่ไม่เปิดเผยแหล่งข้อมูลต้นทาง",
+      "เว็บเปรียบเทียบพอร์ต backtest ที่ไม่ใช่สถาบันวิจัย (เช่น lazyportfolioetf, portfoliocharts) — ใช้เป็นภาพประกอบได้ แต่ไม่ใช้เป็นหลักฐานเชิงวิชาการ"
+    ]
+  }
+}
